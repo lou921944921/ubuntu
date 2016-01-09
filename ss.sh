@@ -7,4 +7,4 @@ sudo apt-get -y install python-gevent python-pip
 pip install shadowsocks
 sudo apt–get install python–m2crypto
 sudo ssserver -c /etc/ss-config.json -d start
-sed -i '1a /usr/local/bin/ssserver -c /etc/ss-config.json' /etc/rc.local
+sed -i '2a /usr/local/bin/ssserver -c /etc/ss-config.json' /etc/rc.local
