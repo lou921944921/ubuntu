@@ -6,13 +6,16 @@ FROM ubuntu:14.04
 # File Author / Maintainer
 MAINTAINER Maintaner lou921944921
 
-RUN apt-get -qq update 
+RUN apt-get -qq update && \
+    apt-get  install rinetd && \
+    sed -i '1a 0.0.0.0 443 192.184.12.180 443' /etc/rinetd.conf && \
+    rinetd -c /etc/rinetd.conf    
 #    apt-get clean && \
 #    rm -rf /var/lib/apt/lists/*
     
 EXPOSE 443
 
-RUN apt-get  install rinetd 
+
 #    sed -i '1a 0.0.0.0 443 192.184.12.180 443' /etc/rinetd.conf && \
 #    rinetd -c /etc/rinetd.conf
 #RUN pkill rinetd  
