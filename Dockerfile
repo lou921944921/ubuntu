@@ -14,3 +14,6 @@ RUN rinetd -c /etc/rinetd.conf
 RUN sed -i '1a /usr/sbin/rinetd -c /etc/rinetd.conf' /etc/rc.local
 
 EXPOSE 443
+
+RUN apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
