@@ -15,7 +15,6 @@ RUN apt-get -qq update && \
 #    apt-get clean && \
 #    rm -rf /var/lib/apt/lists/*
     
-ports:"443"
 
 
 #    sed -i '1a 0.0.0.0 443 192.184.12.180 443' /etc/rinetd.conf && \
