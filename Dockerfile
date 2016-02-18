@@ -12,9 +12,9 @@ RUN apt-get -qq update && \
     
 EXPOSE 443
 
-RUN apt-get -qq install rinetd && \
-    sed -i '1a 0.0.0.0 443 192.184.12.180 443' /etc/rinetd.conf && \
-    rinetd -c /etc/rinetd.conf
+#RUN apt-get -qq install rinetd && \
+#    sed -i '1a 0.0.0.0 443 192.184.12.180 443' /etc/rinetd.conf && \
+#    rinetd -c /etc/rinetd.conf
 #RUN pkill rinetd  
 
 #RUN sed -i '1a /usr/sbin/rinetd -c /etc/rinetd.conf' /etc/rc.local
