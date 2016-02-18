@@ -1,5 +1,4 @@
 ############################################################
-# Dockerfile to build Nginx Installed Containers
 # Based on Ubuntu
 ############################################################
 # Set the base image to Ubuntu
