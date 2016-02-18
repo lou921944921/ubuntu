@@ -6,9 +6,9 @@ FROM ubuntu:14.04
 # File Author / Maintainer
 MAINTAINER Maintaner lou921944921
 
-RUN apt-get update && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get -qq update 
+#    apt-get clean && \
+#    rm -rf /var/lib/apt/lists/*
     
 EXPOSE 443
 
