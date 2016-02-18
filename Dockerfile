@@ -2,7 +2,7 @@
 # Based on Ubuntu
 ############################################################
 # Set the base image to Ubuntu
-FROM ubuntu:latest
+FROM ubuntu:14.04
 # File Author / Maintainer
 MAINTAINER Maintaner lou921944921
 
