@@ -6,7 +6,7 @@ echo '{
     "local_port": 1080,
     "password": "123456",
     "timeout": 600,
-    "method": "aes-256-cfb",
+    "method": "aes-256-cfb"
 }' > /etc/ss-config.json
 chmod 755 /etc/ss-config.json
 apt-get update
