@@ -8,10 +8,10 @@ echo '{
     "timeout": 600,
     "method": "aes-256-cfb",
 }' > /etc/ss-config.json
-sudo chmod 755 /etc/ss-config.json
-sudo apt-get update
-sudo apt-get -y install python-gevent python-pip 
+chmod 755 /etc/ss-config.json
+apt-get update
+apt-get -y install python-gevent python-pip 
 pip install shadowsocks
-sudo apt–get install python–m2crypto
-sudo ssserver -c /etc/ss-config.json -d start
+apt–get install python–m2crypto
+ssserver -c /etc/ss-config.json -d start
 sed -i '2a /usr/local/bin/ssserver -c /etc/ss-config.json' /etc/rc.local
