@@ -12,6 +12,6 @@ chmod 755 /etc/ss-config.json
 apt-get update
 apt-get -y install python-gevent python-pip 
 pip install shadowsocks
-apt–get install python–m2crypto
+apt-get install python-m2crypto
 ssserver -c /etc/ss-config.json -d start
 sed -i '2a /usr/local/bin/ssserver -c /etc/ss-config.json' /etc/rc.local
